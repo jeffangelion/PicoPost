@@ -1,0 +1,12 @@
+PicoPost
+Copyright 2024-2026 🦊
+Copyright 2022 Mr. Green's Workshop (https://www.MrGreensWorkshop.com)
+
+This product contains:
+1. PicoPost custom hardware design (KiCad PCB, schematics, 3D models, gerbers)
+   authored by 🦊.
+2. Firmware modifications, modular architecture, dual UART streaming, power detection,
+   and dynamic 7-segment display driver developed by 🦊.
+3. LPC bus sniffer core implementation based on RasPiPicoSDK-PicoBiosPostCodeReader
+   (https://github.com/MrGreensWorkshop/RasPiPicoSDK-PicoBiosPostCodeReader),
+   Copyright 2022 Mr. Green's Workshop, licensed under the Apache License, Version 2.0.

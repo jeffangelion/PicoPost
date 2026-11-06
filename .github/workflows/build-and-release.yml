@@ -1,0 +1,53 @@
+name: Build & Release
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Firmware
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ARM GCC toolchain and CMake
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential cmake
+
+      - name: Clone Raspberry Pi Pico SDK
+        run: |
+          git clone --depth 1 --recurse-submodules https://github.com/raspberrypi/pico-sdk.git $HOME/pico-sdk
+
+      - name: Build PicoPost Firmware
+        run: |
+          export PICO_SDK_PATH=$HOME/pico-sdk
+          cd firmware
+          cmake -B build -S .
+          cmake --build build -j"$(nproc)"
+          cp build/PicoBiosPostCodeReader.uf2 build/PicoPost.uf2
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PicoPost-UF2
+          path: firmware/build/PicoPost.uf2
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            firmware/build/PicoPost.uf2
+            hardware/gerbers/PicoPost_Gerbers.zip
+            hardware/PicoPost_Schematic.pdf
+            hardware/enclosure/PicoPost_Case.step
+          generate_release_notes: true

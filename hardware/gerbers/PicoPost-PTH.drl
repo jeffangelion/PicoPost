@@ -1,0 +1,85 @@
+M48
+; DRILL file {KiCad 7.0.10} date Ср 03 янв 2024 09:57:36
+; FORMAT={-:-/ absolute / inch / decimal}
+; #@! TF.CreationDate,2024-01-03T09:57:36+02:00
+; #@! TF.GenerationSoftware,Kicad,Pcbnew,7.0.10
+; #@! TF.FileFunction,Plated,1,2,PTH
+FMAT,2
+INCH
+; #@! TA.AperFunction,Plated,PTH,ViaDrill
+T1C0.0157
+; #@! TA.AperFunction,Plated,PTH,ComponentDrill
+T2C0.0295
+; #@! TA.AperFunction,Plated,PTH,ComponentDrill
+T3C0.0394
+%
+G90
+G05
+T1
+X-0.235Y-0.065
+X-0.15Y0.275
+X-0.15Y0.13
+X-0.15Y-0.15
+X-0.1Y-0.2
+X-0.05Y0.28
+X-0.05Y-0.15
+X-0.05Y-0.35
+X0.0Y-0.075
+X0.05Y0.28
+X0.05Y-0.15
+X0.05Y-0.35
+X0.15Y0.275
+X0.15Y0.13
+X0.15Y-0.15
+X0.2Y-0.2
+X0.235Y-0.065
+X0.25Y0.35
+T2
+X-0.2Y0.28
+X-0.2Y-0.02
+X-0.1Y0.28
+X-0.1Y-0.02
+X0.0Y0.28
+X0.0Y-0.02
+X0.1Y0.28
+X0.1Y-0.02
+X0.2Y0.28
+X0.2Y-0.02
+T3
+X-0.3Y0.4
+X-0.3Y0.3
+X-0.3Y0.2
+X-0.3Y0.1
+X-0.3Y0.0
+X-0.3Y-0.1
+X-0.3Y-0.2
+X-0.3Y-0.3
+X-0.3Y-0.4
+X-0.2Y0.4
+X-0.2Y-0.2
+X-0.2Y-0.3
+X-0.2Y-0.4
+X-0.1Y0.4
+X-0.1Y-0.3
+X-0.1Y-0.4
+X0.0Y0.4
+X0.0Y-0.2
+X0.0Y-0.3
+X0.0Y-0.4
+X0.1Y0.4
+X0.1Y-0.2
+X0.1Y-0.3
+X0.1Y-0.4
+X0.2Y0.4
+X0.2Y-0.3
+X0.2Y-0.4
+X0.3Y0.4
+X0.3Y0.3
+X0.3Y0.2
+X0.3Y0.1
+X0.3Y0.0
+X0.3Y-0.1
+X0.3Y-0.2
+X0.3Y-0.3
+X0.3Y-0.4
+M30

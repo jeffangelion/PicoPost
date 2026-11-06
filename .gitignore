@@ -1,0 +1,34 @@
+# Notes & Private
+ANTIGRAVITY_NOTES.md
+ChatExport*
+release_assets/
+
+# Build directories & temporary files
+build/
+firmware/build/
+*.obj
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.dis
+*.uf2
+
+# Pico SDK clone inside firmware
+firmware/pico-sdk/
+
+# KiCad temporary & user files
+*.kicad_prl
+*-save.kicad_*
+_autosave*
+*.bak
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
