@@ -1,5 +1,9 @@
 # PicoPost Bill of Materials (BOM)
 
+<p align="center">
+  <img src="images/picopost_hardware_close.jpg" alt="Assembled PicoPost Board" width="350"/>
+</p>
+
 | Ref Des | Component / Value | Package / Footprint | Qty | Description / Recommendation |
 |:---|:---|:---|:---:|:---|
 | **U1** | RP2040-Zero | SMD Castellated Module | 1 | Waveshare RP2040-Zero or pin-compatible clone |

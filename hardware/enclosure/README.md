@@ -1,5 +1,9 @@
 # PicoPost 3D Printable Enclosure (Корпус)
 
+<p align="center">
+  <img src="../../docs/images/picopost_3d_rotation.gif" alt="PicoPost 3D Model Enclosure" width="340"/>
+</p>
+
 Файл 3D-модели корпуса для защиты платы и индикатора PicoPost.
 
 ## Файлы

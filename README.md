@@ -38,6 +38,27 @@ Built in an ultra-compact form factor (~18.4 × 23.5 mm) around the **Raspberry 
 
 ---
 
+## 🎥 Demonstration & Testing
+
+<p align="center">
+  <img src="docs/images/picopost_boot_demo.gif" alt="PicoPost Live Boot Capture" width="48%" />
+  &nbsp;
+  <img src="docs/images/picopost_rog_am4_demo.gif" alt="PicoPost on ASUS ROG AM4" width="48%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/picopost_rog_am4.jpg" alt="PicoPost matching Motherboard Debug LED (Code C8)" width="48%" />
+  &nbsp;
+  <img src="docs/images/picopost_3d_rotation.gif" alt="PicoPost 3D Model" width="48%" />
+</p>
+
+### Verified Hardware & Motherboards:
+- **ASUS ROG Crosshair VIII Dark Hero (AMD AM4 / X570):** Connected via the motherboard TPM / LPC header. Real-time parity verified against the motherboard's onboard 2-digit debug LED (demonstrated above showing code `C8`).
+- **ASUS Desktop Motherboards (Intel / AMD):** Connected via standard 10-pin ASUS TPM header. Full POST sequence captured from cold reset through memory/PCIe initialization up to OS boot handoff.
+- **MSI 760GM-P33 (AMD AM3+):** Verified with standard LPC header pinout.
+
+---
+
 ## 🖼️ Hardware Design (PCB)
 
 The PCB is designed as a sandwich module: the RP2040-Zero is soldered directly flat onto the castellated pads on the bottom layer, SMD resistors and protection diodes are mounted inside, while the dual 7-segment display and pin headers are placed on the top layer.
