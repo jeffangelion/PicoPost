@@ -41,19 +41,13 @@
 ## 🎥 Демонстрация работы и тестирование
 
 <p align="center">
-  <img src="docs/images/picopost_boot_demo.gif" alt="PicoPost захват кодов при старте" width="48%" />
-  &nbsp;
-  <img src="docs/images/picopost_rog_am4_demo.gif" alt="PicoPost на плате ASUS ROG AM4" width="48%" />
-</p>
-
-<p align="center">
-  <img src="docs/images/picopost_rog_am4.jpg" alt="Синхронное отображение кода C8 на плате и PicoPost" width="48%" />
-  &nbsp;
   <img src="docs/images/picopost_3d_rotation.gif" alt="3D-модель корпуса PicoPost" width="48%" />
+  &nbsp;
+  <img src="docs/images/picopost_boot_demo.gif" alt="PicoPost захват кодов при старте" width="48%" />
 </p>
 
 ### Протестировано на материнских платах:
-- **ASUS ROG Crosshair VIII Dark Hero (AMD AM4 / X570):** Подключение через разъём TPM / LPC. Полная синхронность с встроенным 2-разрядным индикатором материнской платы (на фото выше отображается код `C8`).
+- **ASUS ROG Crosshair VIII Dark Hero (AMD AM4 / X570):** Подключение через разъём TPM / LPC. Полная синхронность с встроенным 2-разрядным индикатором материнской платы.
 - **Десктопные платы ASUS (Intel / AMD):** Подключение через стандартный 10-пиновый разъём ASUS TPM. Непрерывный перебор и захват диагностических кодов от момента включения и инициализации памяти/PCIe до передачи управления ОС.
 - **MSI 760GM-P33 (AMD AM3+):** Проверена корректная работа со стандартной гребёнкой шины LPC.
 
